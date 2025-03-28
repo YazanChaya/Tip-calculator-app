@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inconsolata:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="the-page">
+      <div class="img-div">
+        <img src="images/logo.svg" alt="" class="logo" />
+      </div>
+      <div class="container">
+        <div class="left">
+          <div class="input-div">
+            <p class="p-indiv">Bill</p>
+            <input
+              class="person-input"
+              type="number"
+              placeholder="0"
+              dir="rtl"
+            />
+            <img src="images/icon-dollar.svg" alt="" class="icon" />
+          </div>
+          <div class="input-div-pro">
+            <p class="p-indiv">Select Tip %</p>
+            <div class="tip-div">
+              <button type="button" data-pro="5%">5%</button>
+              <button type="button" data-pro="10%">10%</button>
+              <button type="button" data-pro="15%">15%</button>
+              <button type="button" data-pro="25%">25%</button>
+              <button type="button" data-pro="50%">50%</button>
+              <button type="button" class="custom">Custom</button>
+            </div>
+          </div>
+          <div class="input-div">
+            <p class="p-indiv">Number of People</p>
+            <input class="person-num" type="number" placeholder="0" dir="rtl" />
+            <img src="images/icon-person.svg" alt="" class="icon" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="tip-amount">
+            <div class="tip-amount-div">
+              <p>Tip Amount</p>
+              <p class="small-p">/ person</p>
+            </div>
+            <div class="div-intip">$0.00</div>
+          </div>
+          <div class="tip-amount">
+            <div class="tip-amount-div">
+              <p>Total</p>
+              <p class="small-p">/ person</p>
+            </div>
+            <div class="div-intip-total">$0.00</div>
+          </div>
+          <button type="reset" class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <!-- Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+    <script src="main.js"></script>
+  </body>
+</html>
